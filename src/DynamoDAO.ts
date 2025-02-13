@@ -613,7 +613,7 @@ export abstract class DynamoDAO {
 
     public static DELIMITER: string = "#";
 
-    public readonly client: DynamoDB;
+    public client: DynamoDB;
 
     public constructor(protected readonly dynamoDBOptions: DynamoDBOptions) {
         assert.ok(dynamoDBOptions);
